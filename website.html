@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Website</title>
+    <!-- Corrected the link to CSS styles -->
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Added Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Added styles for carousel caption and indicators */
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .carousel-indicators button {
+            background-color: #000;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-group">
+        <div class="card">
+          <img src="download (1).jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Photo 1</h5>
+            <p class="card-text">Puppy no1</p>
+          </div>
+        <button class="btn btn-primary" style="width:200px; margin-left:100px; margin-bottom:30px;">Click me</button>
+        </div>
+        <div class="card">
+          <img src="download (2).jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Photo 2</h5>
+            <p class="card-text">Puppy n02</p>
+          </div>
+          <button class="btn btn-primary" style="width:200px; margin-left:100px; margin-bottom:30px;">Click me</button>
+        </div>
+        <div class="card">
+          <img src="download (3).jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Photo 3</h5>
+            <p class="card-text">Puppy no3</p>
+          </div>
+          <button class="btn btn-primary" style="width:200px; margin-left:100px; margin-bottom:30px;">Click me</button>
+        </div>
+        <div class="card">
+            <img src="download.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Photo 4</h5>
+              <p class="card-text">Puppy no4</p>
+            </div>
+            <button class="btn btn-primary" style="width:200px; margin-left:100px; margin-bottom:30px;">Click me</button>
+          </div>
+        </div>
+
+    <!-- Bootstrap Carousel -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel inner with images -->
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="7000">
+                <img src="imag1.jpeg" class="d-block w-100 img-fluid" alt="First slide image" style="height: 800px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Slide number 1</h5>
+                    <p>Puppies are bundles of joy, with their tiny paws, wagging tails, and endless curiosity, bringing warmth and happiness to anyone lucky enough to be around them.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="7000">
+                <img src="img2.jpeg" class="d-block w-100 img-fluid" alt="Second slide image" style="height: 800px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Slide number 2</h5>
+                    <p>Puppies are bundles of joy, with their tiny paws, wagging tails, and endless curiosity, bringing warmth and happiness to anyone lucky enough to be around them.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="7000">
+                <img src="img3.jpeg" class="d-block w-100 img-fluid" alt="Third slide image" style="height: 800px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Slide number 3</h5>
+                    <p>Puppies are bundles of joy, with their tiny paws, wagging tails, and endless curiosity, bringing warmth and happiness to anyone lucky enough to be around them.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Add Bootstrap JS -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
